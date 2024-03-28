@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #555555;
     color: #333333;
   }
   
@@ -45,7 +45,7 @@ body {
   }
   
   .hero-section h1 {
-    color: #333333;
+    color: #ffffff;
     margin-bottom: 20px;
   }
   
@@ -133,7 +133,8 @@ body {
   /* CSS Contact */
 section {
   margin-top: 3%;
-  margin-left: 3%;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
 /* CSS About */
@@ -141,6 +142,12 @@ section {
 #about {
   transform: translateY(20px); /* Déplace la section vers le bas initialement */
   transition: transform 0.5s ease;
+  
+}
+
+#title-description{
+  margin-bottom: 2.5%;
+  color: #ffffff;
 }
 
 #about:hover {
@@ -149,6 +156,8 @@ section {
 
 .about-content p {
   transition: color 0.3s ease; /* Transition de couleur pour les paragraphes */
+  margin-left: 2%;
+  color: #ffffff;
 }
 
 /* CSS Skills */
