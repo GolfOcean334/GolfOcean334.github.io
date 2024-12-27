@@ -1,0 +1,163 @@
+/* CSS homepage */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #555555;
+    color: #333333;
+  }
+  
+  header {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #9c9c9c;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hero-section img {
+    max-width: 10%;
+    max-height: 10%;
+    height: auto;
+  }
+  
+  .hero-section h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+
+  /* CSS Projet */
+
+  .project {
+    transform: translateY(20px); /* Déplace la section vers le bas initialement */
+    transition: transform 0.5s ease;
+  }
+  
+  .project:hover {
+    transform: translateY(0); /* Déplace la section vers le haut au survol */
+  }
+  .projects-section {
+    text-align: center;
+    padding: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .project {
+    margin-bottom: 10%;
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%; 
+  }
+  
+  .project:last-child {
+    margin-right: 0;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .project h3 {
+    color: #333333;
+    margin-top: 10px;
+  }
+
+  
+  .project #cplus {
+    color: #d6478f;
+  }
+  
+  .project #csharp {
+    color: #1fb81f;
+  }
+  
+  .project p {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+
+  /* CSS Contact */
+section {
+  margin-top: 3%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* CSS About */
+
+#about {
+  transform: translateY(20px); /* Déplace la section vers le bas initialement */
+  transition: transform 0.5s ease;
+  
+}
+
+#title-description{
+  margin-bottom: 2.5%;
+  color: #ffffff;
+}
+
+#about:hover {
+  transform: translateY(0); /* Déplace la section vers le haut au survol */
+}
+
+.about-content p {
+  transition: color 0.3s ease; /* Transition de couleur pour les paragraphes */
+  margin-left: 2%;
+  color: #ffffff;
+}
+
+/* CSS Skills */
