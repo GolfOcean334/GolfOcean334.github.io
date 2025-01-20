@@ -4,10 +4,6 @@ using TMPro;
 public class TMPDropdownHandler : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown languageDropdown;
-    [SerializeField] private GameObject[] allProjects;
-    [SerializeField] private RectTransform contentTransform;
-    [SerializeField] private float projectHeight = 500f;
-    readonly private string allOptionText = "Tout";
 
     void Start()
     {
@@ -20,16 +16,10 @@ public class TMPDropdownHandler : MonoBehaviour
 
         int activeProjectCount = 0;
 
-        foreach (GameObject obj in allProjects)
+        foreach (GameObject obj in ProjectManager.Instance.AllProjects)
         {
             MultiTag multiTag = obj.GetComponent<MultiTag>();
-
-            if (selectedLanguage == allOptionText)
-            {
-                obj.SetActive(true);
-                activeProjectCount++;
-            }
-            else if (multiTag != null && multiTag.HasTag(selectedLanguage))
+            if (selectedLanguage == "Tout" || (multiTag != null && multiTag.HasTag(selectedLanguage)))
             {
                 obj.SetActive(true);
                 activeProjectCount++;
@@ -40,7 +30,6 @@ public class TMPDropdownHandler : MonoBehaviour
             }
         }
 
-        float newHeight = activeProjectCount * projectHeight;
-        contentTransform.sizeDelta = new Vector2(contentTransform.sizeDelta.x, newHeight);
+        ProjectManager.Instance.UpdateContentHeight(activeProjectCount);
     }
 }
